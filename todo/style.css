@@ -1,0 +1,103 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+font-family: "Raleway", sans-serif;
+background: #f2f2f2;
+height: 100vh;
+}
+
+.disabled{
+    pointer-events: none;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    z-index: 1;
+    margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width:540px;
+        margin: 0 10%
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width:720px
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width:960px
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width:1140px
+    }
+}
+
+/****************************************/
+.content {
+    padding-top: 150px;
+}
+.content .container .inputs {
+    display: flex;
+}
+.content .container .inputs input{
+border: none;
+padding: 20px;
+background-color: #fff;
+outline:none ;
+}
+.content .container .inputs #input_task{
+    font-size: 20px;
+    width: 100%;
+    border: 1px solid;
+    border-color:#ccc ;
+    border-right: none;
+}
+.content .container .inputs #add_task{
+    border: 1px solid;
+    border-color:#ccc ;
+    border-left: none;
+    font-size: 18px;
+
+}
+
+.content .container .tasks{
+    margin-top: 15px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.content .container .tasks .task_container{
+    display: flex;
+    padding: 10px;
+    gap: 15px;
+}
+.content .container .tasks .task_container p{
+    flex: 1;
+    font-size: 25px;
+}
+.content .container .tasks .task_container.done p{
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+.content .container .tasks .task_container #state{
+    width: 30px;
+    height: 30px;
+
+}
+.content .container .tasks .task_container #delete_btn{
+    padding: 5px 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}

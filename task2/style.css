@@ -1,0 +1,207 @@
+:root{
+    --white-color: #ffffff; 
+    --gray-color: #b8b8b8; 
+    --main-color:#00f0ff ;
+    --bg-dark: #0a0a0a;
+    --bg-darker: #050505;
+}
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    box-sizing:border-box;
+    font-family: sans-serif;
+    color: var(--white-color);
+}
+ul{
+    list-style: none;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+ header{
+    background-color: var(--bg-darker);
+    padding: 15px 0 ;
+    border-bottom: 1px solid #b8b8b847;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ header .logo i{
+    font-size: 24px;
+    color: var(--main-color);
+}
+header .logo .icon{
+font-weight: 700;
+font-size: 28px;
+margin-left: 5px;
+}
+ header ul{
+    display: flex;
+    gap: 30px;
+    flex: 1;
+    justify-content: center;
+}
+
+ header ul li a{
+    text-decoration: none;
+    color: inherit;
+    padding-bottom:5px ;
+    transition:color 0.3s;
+}
+ header ul li:hover a,
+ header ul li a.active{
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+}
+header .actions{
+    display: flex;
+    gap: 20px;
+}
+header .actions button{
+    background: transparent;
+    border: transparent;
+    color: white;
+    font-size: 18px;
+}
+header .actions a{
+    background: var(--main-color);
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--bg-dark);
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+header .actions a:hover{
+    opacity: 0.8;
+}
+
+.content{
+height: 100vh;
+overflow:hidden ;
+background-image:url(gaming.jpg);
+background-size: cover;
+position: relative;
+} 
+.content::after{
+content: "";
+    background-color: var(--bg-dark);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 90%;
+}
+.content .container{
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.content .container .landing-text{
+    max-width: 600px;
+}
+.content .container .landing-text .landing-subtitle{
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: var(--main-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.content .container .landing-text h1{
+    font-size: 64px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.content .container .landing-text h1 span{
+    color: var(--main-color);
+    position: relative;
+}
+.content .container .landing-text h1 span::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: var(--main-color);
+    bottom: 0px;
+    left: 0;
+}
+.content .container .landing-text p{
+    font-size: 17.6px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: var(--gray-color);
+}
+.content .container .land-buttons{
+    display: flex;
+    gap: 20px;
+}
+.content .container .land-buttons a{
+padding: 15px 30px ;
+border: 1px solid var(--main-color);
+border-radius: 50px;
+display: inline-flex;
+gap: 10px;
+font-weight: 600;
+transition: 0.3s;
+}
+.content .container .land-buttons a.primary-btn{
+    background-color: var(--main-color);
+    color: var(--bg-dark);
+}
+.content .container .land-buttons a.primary-btn:hover{
+    opacity: 0.8;
+}
+.content .container .land-buttons a.secondary-btn{
+background-color: transparent;
+color: var(--white-color);
+}
+.content .container .land-buttons a.secondary-btn:hover{
+        background-color: rgba(0, 240, 255, 0.1);
+}
+/*******************/
+.content .container .landing-stats{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.content .container .landing-stats .stat-item{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+.content .landing-stats .stat-item .stat-number{
+    font-size: 40px;
+    color: var(--main-color);
+    font-weight: 700;
+}
+.content .landing-stats .stat-item .stat-label{
+    font-size: 14.4px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
