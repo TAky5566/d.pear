@@ -33,7 +33,7 @@ function creatElement(text, id, state = null) {
     state == true ? "checked" : ""
   } onclick="changestate(this.parentElement)">
 <p class="task_content" data-id="${id}"> ${text}</p>
-<input type="button" value="delete" id="delete_btn" onclick="erase(this.parentElement)">
+<input type="button" value="Delete" id="delete_btn" onclick="erase(this.parentElement)">
 `;
 
   document.querySelector(".tasks").appendChild(ticket);
@@ -44,7 +44,6 @@ function erase(x) {
   tasks = tasks.filter((t) => t.id != id);
   localStorage.setItem("tasks", {});
   localStorage.setItem("tasks", JSON.stringify(tasks));
-  console.log(id);
   x.remove();
 }
 function changestate(x) {
@@ -57,10 +56,8 @@ function changestate(x) {
     title: input.innerText,
     statue: state,
   };
-
   tasks = tasks.filter((t) => t.id != id);
   tasks.push(newtask);
-  console.log(tasks);
   localStorage.setItem("tasks", {});
   localStorage.setItem("tasks", JSON.stringify(tasks));
 }
