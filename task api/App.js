@@ -7,7 +7,6 @@ let CartContainer = document.querySelector(".modal-body");
 async function fetchdata() {
   let ApiResponse = await fetch("https://fakestoreapi.com/products");
   Data = await ApiResponse.json();
-  console.log(Data);
   buildcards();
   updateCartCount();
 }
@@ -29,7 +28,7 @@ async function buildcards() {
         <p class="card-text">${product.category}</p>
          <div class="d-flex  align-items-center justify-content-between ">
         <span class="price">${product.price}$</span>
-          <button href="#" class="btn  btn-primary" ${
+          <button class="btn  btn-primary" ${
             inCartProducts[product.id]
               ? inCartProducts[product.id].Added
                 ? "disabled"
@@ -67,9 +66,7 @@ function AddToCart(btn) {
   inCartProducts[id] = Data[id - 1];
   inCartProducts[id].Added = true;
   localStorage.setItem("inCart", JSON.stringify(inCartProducts));
-  console.log(JSON.parse(localStorage.getItem("inCart")));
   updateCartCount();
-  CartUpdate();
 }
 
 function updateCartCount() {
@@ -109,11 +106,8 @@ function CartUpdate() {
 
 function removeFromCart(productId) {
   delete inCartProducts[productId];
-  console.log(inCartProducts);
   localStorage.setItem("inCart", JSON.stringify(inCartProducts));
-
   const addButton = document.querySelector(`button[data-id="${productId}"]`);
-  console.log(addButton);
   if (addButton) {
     addButton.disabled = false;
     addButton.dataset.inCart = false;
@@ -122,4 +116,5 @@ function removeFromCart(productId) {
 
   updateCartCount();
 }
+
 fetchdata();
