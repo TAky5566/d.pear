@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="assest/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="hero c-white">
+      <nav class="navbar navbar-expand-lg bg-transparent py-3">
+        <div class="container-fluid container">
+          <a class="navbar-brand fs-2 logo c-white" href="#"> Feane </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon c-white">
+              <i
+                class="bi bi-list toggler-icon"
+                onclick="this.classList.toggle('bi-list') ; this.classList.toggle('bi-x')"
+              ></i>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 d-flex">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">menu</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">book table</a>
+              </li>
+            </ul>
+            <div class="d-flex align-items-center">
+              <a href="#" class="nav-link me-3 fs-5"
+                ><i class="bi bi-person-fill"></i
+              ></a>
+              <a href="#" class="nav-link me-3 fs-5"
+                ><i class="bi bi-cart-fill"></i
+              ></a>
+              <a href="#" class="nav-link me-3 fs-5"
+                ><i class="bi bi-search"></i
+              ></a>
+              <a href="#" class="btn rounded-pill main-button">Order Online</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container hero-carousel">
+        <div
+          id="carouselExample"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators align-items-center">
+            <button
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div
+              class="carousel-item carousel-slide active"
+              data-bs-interval="5000"
+            >
+              <div class="row">
+                <div class="col-md-6 carousel-slide-content">
+                  <h2>Slide 1: Fast Food</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Modi, officiis. Ex, aliquam! Dolores sint voluptas sunt
+                    ratione vitae quod nisi sequi illo, delectus eius quaerat
+                    ad. Architecto soluta excepturi ipsum.
+                  </p>
+                  <a href="#" class="main-button rounded-pill"> Discover Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item carousel-slide" data-bs-interval="5000">
+              <div class="row">
+                <div class="col-md-6 carousel-slide-content">
+                  <h2>Slide 2: Fresh Drinks</h2>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Minus ipsa quis officia ea est consequatur dicta culpa et
+                    ipsum odio. Repellendus repellat veritatis odio atque
+                    dolorum aspernatur laboriosam dolore ad.
+                  </p>
+                  <a href="#" class="main-button rounded-pill"> Discover Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item carousel-slide" data-bs-interval="5000">
+              <div class="row">
+                <div class="col-md-6 carousel-slide-content">
+                  <h2>Slide 3: Best Desserts</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolor facilis exercitationem sed officia, veritatis
+                    perspiciatis a laudantium excepturi veniam doloremque
+                    incidunt asperiores inventore totam quaerat nihil
+                    repudiandae enim eos ad.
+                  </p>
+                  <a href="#" class="main-button rounded-pill"> Discover Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="special-offers">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="box">
+              <div class="image">
+                <img src="assest/img/o1.jpg" class="img-fluid" alt="..." />
+              </div>
+              <div class="col">
+                <div class="box-body">
+                  <h5 class="box-title">Tasty Thursdays</h5>
+                  <h6 class="box-text"><span>20%</span> Off</h6>
+                  <a href="#" class="box-link main-button rounded-pill"
+                    >Order Now<i class="bi bi-cart-fill"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="box">
+              <div class="image">
+                <img src="assest/img/o2.jpg" class="img-fluid" alt="..." />
+              </div>
+              <div class="col">
+                <div class="box-body">
+                  <h5 class="box-title">Tasty Thursdays</h5>
+                  <h6 class="box-text"><span>20%</span> Off</h6>
+                  <a href="#" class="box-link main-button rounded-pill"
+                    >Order Now<i class="bi bi-cart-fill"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="menu">
+      <div class="container">
+        <div class="header"><h2>Our Menu</h2></div>
+        <ul class="filter">
+          <li data-target="all" class="active">All</li>
+          <li data-target="burger">burger</li>
+          <li data-target="pizza">pizza</li>
+          <li data-target="pasta">pasta</li>
+          <li data-target="fries">fries</li>
+        </ul>
+        <div class="filter-content row">
+          <div class="all col-lg-4 col-md-6 col-sm-6 pizza">
+            <div class="box">
+              <div class="image"><img src="assest/img/f1.png" alt="..." /></div>
+              <div class="box-body">
+                <h5 class="box-title">Delicious pizza</h5>
+                <p class="box-text">
+                  Veniam debitis quaerat officiis quasi cupiditate quo, quisquam
+                  velit, magnam voluptatem repellendus sed eaque
+                </p>
+                <div class="box-footer">
+                  <h6 class="box-price">$10.00</h6>
+                  <a href="#" class="box-link rounded-pill"
+                    ><i class="bi bi-cart-fill"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="all col-lg-4 col-md-6 col-sm-6 burger">
+            <div class="box">
+              <div class="image"><img src="assest/img/f2.png" alt="..." /></div>
+              <div class="box-body">
+                <h5 class="box-title">Delicious burger</h5>
+                <p class="box-text">
+                  Veniam debitis quaerat officiis quasi cupiditate quo, quisquam
+                  velit, magnam voluptatem repellendus sed eaque
+                </p>
+                <div class="box-footer">
+                  <h6 class="box-price">$10.00</h6>
+                  <a href="#" class="box-link rounded-pill"
+                    ><i class="bi bi-cart-fill"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="all col-lg-4 col-md-6 col-sm-6 pizza">
+            <div class="box">
+              <div class="image"><img src="assest/img/f3.png" alt="..." /></div>
+              <div class="box-body">
+                <h5 class="box-title">Delicious pizza</h5>
+                <p class="box-text">
+                  Veniam debitis quaerat officiis quasi cupiditate quo, quisquam
+                  velit, magnam voluptatem repellendus sed eaque
+                </p>
+                <div class="box-footer">
+                  <h6 class="box-price">$10.00</h6>
+                  <a href="#" class="box-link rounded-pill"
+                    ><i class="bi bi-cart-fill"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="all col-lg-4 col-md-6 col-sm-6 pasta">
+            <div class="box">
+              <div class="image"><img src="assest/img/f4.png" alt="..." /></div>
+              <div class="box-body">
+                <h5 class="box-title">Delicious pasta</h5>
+                <p class="box-text">
+                  Veniam debitis quaerat officiis quasi cupiditate quo, quisquam
+                  velit, magnam voluptatem repellendus sed eaque
+                </p>
+                <div class="box-footer">
+                  <h6 class="box-price">$10.00</h6>
+                  <a href="#" class="box-link rounded-pill"
+                    ><i class="bi bi-cart-fill"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="all col-lg-4 col-md-6 col-sm-6 fries">
+            <div class="box">
+              <div class="image"><img src="assest/img/f5.png" alt="..." /></div>
+              <div class="box-body">
+                <h5 class="box-title">Delicious fries</h5>
+                <p class="box-text">
+                  Veniam debitis quaerat officiis quasi cupiditate quo, quisquam
+                  velit, magnam voluptatem repellendus sed eaque
+                </p>
+                <div class="box-footer">
+                  <h6 class="box-price">$10.00</h6>
+                  <a href="#" class="box-link rounded-pill"
+                    ><i class="bi bi-cart-fill"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="all col-lg-4 col-md-6 col-sm-6 pizza">
+            <div class="box">
+              <div class="image"><img src="assest/img/f6.png" alt="..." /></div>
+              <div class="box-body">
+                <h5 class="box-title">Delicious pizza</h5>
+                <p class="box-text">
+                  Veniam debitis quaerat officiis quasi cupiditate quo, quisquam
+                  velit, magnam voluptatem repellendus sed eaque
+                </p>
+                <div class="box-footer">
+                  <h6 class="box-price">$10.00</h6>
+                  <a href="#" class="box-link rounded-pill"
+                    ><i class="bi bi-cart-fill"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="all col-lg-4 col-md-6 col-sm-6 burger">
+            <div class="box">
+              <div class="image"><img src="assest/img/f7.png" alt="..." /></div>
+              <div class="box-body">
+                <h5 class="box-title">Delicious burger</h5>
+                <p class="box-text">
+                  Veniam debitis quaerat officiis quasi cupiditate quo, quisquam
+                  velit, magnam voluptatem repellendus sed eaque
+                </p>
+                <div class="box-footer">
+                  <h6 class="box-price">$10.00</h6>
+                  <a href="#" class="box-link rounded-pill"
+                    ><i class="bi bi-cart-fill"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="all col-lg-4 col-md-6 col-sm-6 burger">
+            <div class="box">
+              <div class="image"><img src="assest/img/f8.png" alt="..." /></div>
+              <div class="box-body">
+                <h5 class="box-title">Delicious burger</h5>
+                <p class="box-text">
+                  Veniam debitis quaerat officiis quasi cupiditate quo, quisquam
+                  velit, magnam voluptatem repellendus sed eaque
+                </p>
+                <div class="box-footer">
+                  <h6 class="box-price">$10.00</h6>
+                  <a href="#" class="box-link rounded-pill"
+                    ><i class="bi bi-cart-fill"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="all col-lg-4 col-md-6 col-sm-6 pasta">
+            <div class="box">
+              <div class="image"><img src="assest/img/f9.png" alt="..." /></div>
+              <div class="box-body">
+                <h5 class="box-title">Delicious pasta</h5>
+                <p class="box-text">
+                  Veniam debitis quaerat officiis quasi cupiditate quo, quisquam
+                  velit, magnam voluptatem repellendus sed eaque
+                </p>
+                <div class="box-footer">
+                  <h6 class="box-price">$10.00</h6>
+                  <a href="#" class="box-link rounded-pill"
+                    ><i class="bi bi-cart-fill"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="menu-btn rounded-pill">Show More</a>
+      </div>
+    </section>
+    <section class="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 about-image">
+            <img src="assest/img/about-img.png" alt="burger-image" />
+          </div>
+          <div class="col-md-6 about-text">
+            <h2 class="heading">We Are Feane</h2>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable. If you are going to use a passage of Lorem
+              Ipsum, you need to be sure there isn't anything embarrassing
+              hidden in the middle of text. All
+            </p>
+            <a href="#" class="about-btn rounded-pill"> Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="book-table-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="heading-container">
+              <h2>Book A Table</h2>
+            </div>
+            <form>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="tel"
+                  class="form-control"
+                  placeholder="Phone Number"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Your Email"
+                />
+              </div>
+              <div class="mb-3">
+                <select class="form-select" aria-label="How many persons?">
+                  <option selected>How many persons?</option>
+                  <option value="1">2</option>
+                  <option value="2">3</option>
+                  <option value="3">4</option>
+                  <option value="4">5+</option>
+                </select>
+              </div>
+              <div class="mb-4">
+                <input type="date" class="form-control" />
+              </div>
+                <button type="submit" class="rounded-pill main-button">BOOK NOW</button>
+  
+            </form>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="space"></div>
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.736593427993!2d31.23344931511514!3d30.04442088188239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145840c75022c357%3A0x19f9751792e48a1c!2sTahrir%20Square!5e0!3m2!1sen!2seg!4v1678886011123!5m2!1sen!2seg"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials-section">
+      <div class="container">
+        <div class="heading-container">
+          <h2>What Says Our Customers</h2>
+        </div>
+
+        <div id="clientCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-5 mb-4">
+                  <div class="client-box">
+                    <div class="details-box">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam
+                      </p>
+                      <h6>Moana Michell</h6>
+                      <p>magna aliqua</p>
+                    </div>
+                    <div class="img-box">
+                      <img
+                        src="assest/img/client2.jpg"
+                        alt="صورة عميل"
+                        class="img-fluid"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-5 mb-4">
+                  <div class="client-box">
+                    <div class="details-box">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam
+                      </p>
+                      <h6>Mike Hamell</h6>
+                      <p>magna aliqua</p>
+                    </div>
+                    <div class="img-box">
+                      <img
+                        src="assest/img/client1.jpg"
+                        alt="صورة عميل"
+                        class="img-fluid"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-5 mb-4">
+                  <div class="client-box">
+                    <div class="details-box">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam
+                      </p>
+                      <h6>Ahmed Ali</h6>
+                      <p>magna aliqua</p>
+                    </div>
+                    <div class="img-box">
+                      <img
+                        src="assest/img/client2.jpg"
+                        alt="صورة عميل"
+                        class="img-fluid"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-5 mb-4">
+                  <div class="client-box">
+                    <div class="details-box">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam
+                      </p>
+                      <h6>Sara Mohamed</h6>
+                      <p>magna aliqua</p>
+                    </div>
+                    <div class="img-box">
+                      <img
+                        src="assest/img/client1.jpg"
+                        alt="صورة عميل"
+                        class="img-fluid"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- أزرار التحكم -->
+          <div class="carousel-controls text-center mt-4">
+            <button
+              class="control-btn"
+              data-bs-target="#clientCarousel"
+              data-bs-slide="prev"
+            >
+              <i class="bi bi-chevron-left"></i>
+            </button>
+            <button
+              class="control-btn"
+              data-bs-target="#clientCarousel"
+              data-bs-slide="next"
+            >
+              <i class="bi bi-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer_section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 footer-col">
+            <h4>Contact Us</h4>
+            <div class="contact_link_box">
+              <a href="#">
+                <i class="bi bi-geo-alt-fill"></i>
+                <span> Location</span>
+              </a>
+              <a href="#">
+                <i class="bi bi-telephone-fill"></i>
+                <span> Call +01 1234567890</span>
+              </a>
+              <a href="#">
+                <i class="bi bi-envelope-fill"></i>
+                <span> demo@gmail.com</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 footer-col">
+            <h4>Feane</h4>
+            <p>
+              Necessary, making this the first true generator on the Internet.
+              It uses a dictionary of over 200 Latin words, combined with
+            </p>
+            <div class="footer_social">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-pinterest"></i></a>
+            </div>
+          </div>
+          <div class="col-md-4 footer-col">
+            <h4>Opening Hours</h4>
+            <p>Everyday</p>
+            <p>10.00 Am -10.00 Pm</p>
+          </div>
+        </div>
+        <div class="footer-info">
+          <p>
+            &copy; 2025 All Rights Reserved By
+            <a href="https://html.design/">Free Html Templates</a><br />
+            &copy; <span id="displayYear2"></span> Distributed By
+            <a href="https://themewagon.com/" target="_blank">ThemeWagon</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assest/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
